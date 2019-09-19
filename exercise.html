@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function validate_phoneNumber(str) {
+       let regexp=/^\([0-9]{2}\)[-]\([0][0-9]{9}\)$/;
+       if(regexp.test(str)){
+            console.log("ok")
+        } else {
+            console.log("wrong")
+        }
+    }
+    validate_phoneNumber("(84)-(0978489648)");
+    validate_phoneNumber("(a8)-(22222222)")
+</script>
+</body>
+</html>
